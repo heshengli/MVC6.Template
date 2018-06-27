@@ -1,8 +1,8 @@
 Header = {
     init: function () {
-        $('.header .dropdown').on('mouseleave', function () {
-            if (this.classList.contains('show')) {
-                $(this).dropdown('toggle');
+        $('.header .dropdown-toggle').on('mouseleave', function () {
+            if (this.parentNode.classList.contains('show')) {
+                this.Dropdown.toggle();
             }
         });
     }
